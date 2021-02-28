@@ -1,4 +1,4 @@
-"""ApiGateway URL Configuration
+"""SocialMediaService URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from ApiGateway import views
+from SocialMediaService import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
+    path('tweets/', views.mockTweets, name='mock')
 ]

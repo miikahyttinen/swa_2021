@@ -20,5 +20,6 @@ from WebScraper import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
+    path('tennisabstract', views.data, name='data')
 ]

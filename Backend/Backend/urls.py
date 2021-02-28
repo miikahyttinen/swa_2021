@@ -20,5 +20,6 @@ from Backend import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
+    path('data', views.getMockData, name='mockData')
 ]
